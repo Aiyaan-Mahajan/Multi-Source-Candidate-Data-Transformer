@@ -6,7 +6,7 @@
 
 ## Overview
 
-Recruiting data arrives from many sources at once: recruiter CSV exports, resumes, ATS dumps, GitHub profiles, free-text notes. Each source is heterogeneous, dirty, and overlapping — the same person often appears multiple times with slightly different field values.
+Recruiting data arrives from many sources at once — recruiter CSV exports, plain-text resumes, and (in production) ATS exports, GitHub profiles, and free-text notes. **This implementation ingests recruiter CSV and plain-text resume files**; additional adapters are extension points only.
 
 This project solves that by running a fixed four-stage pipeline: **ingest → merge → project → validate**. Source adapters capture raw values with provenance; merge normalizes, deduplicates, and resolves conflicts into a rich canonical record; projection reshapes output from a runtime config without code changes; validation enforces the config-implied schema before anything is emitted.
 
