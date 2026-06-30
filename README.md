@@ -101,9 +101,13 @@ On Windows, use `python` (not `python3`) if that is your Python launcher convent
 
 ```bash
 python main.py --csv data/candidates.csv --resume data/resume.txt --config configs/default.json
+```
 
 
-Module equivalent: `python -m eightfold_transformer.app --csv data/candidates.csv --resume data/resume.txt --config configs/default.json`
+### Module equivalent: 
+```
+python -m eightfold_transformer.app --csv data/candidates.csv --resume data/resume.txt --config configs/default.json
+```
 
 ### Custom projection config
 
