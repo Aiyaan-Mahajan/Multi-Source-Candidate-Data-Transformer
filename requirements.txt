@@ -1,0 +1,15 @@
+# Multi-Source Candidate Data Transformer - dependencies
+# Deterministic, no LLM / no ML. Minimal set: only what the pipeline actually needs.
+#
+# Intentionally NOT added (covered by the Python standard library):
+#   - CSV parsing            -> stdlib `csv`
+#   - JSON parsing/output    -> stdlib `json`
+#   - CLI argument parsing    -> stdlib `argparse`
+#   - hashing (candidate_id) -> stdlib `hashlib`
+
+pydantic         # canonical/partial data models + typed schema validation (default schema)
+phonenumbers     # parse + normalize phones to E.164 (deterministic, region-aware)
+python-dateutil  # robust deterministic date parsing -> normalized YYYY-MM
+pdfplumber       # deterministic text extraction from resume PDFs
+python-docx      # text extraction from resume DOCX files
+pytest           # test suite (unit + golden-profile comparison)

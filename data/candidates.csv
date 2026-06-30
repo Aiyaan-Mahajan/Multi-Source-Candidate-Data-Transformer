@@ -1,0 +1,9 @@
+name,email,phone,current_company,title
+Priya Sharma,priya.sharma@gmail.com,(555) 123-4567,Acme Corp,Senior Backend Engineer
+Priya Sharma,priya.sharma@gmail.com,+1-555-123-4567,Acme Corporation,Backend Engineer
+Priya Sharma,priya.s@work.io,555.123.4567,Acme Corp,Staff Backend Engineer
+P. Sharma,,5551234567,Acme Corporation,Engineer
+Jordan Kim,jordan.kim@globex.com,call me,Globex Inc,Product Manager
+Marcus Lee,marcus.lee@example.com,(555) 987-6543,Initech,Data Scientist
+Marcus Lee,m.lee2@example.com,555-222-0000,Initech,Data Analyst
+Dana Patel,dana.patel@nullco.com,N/A,,QA Lead

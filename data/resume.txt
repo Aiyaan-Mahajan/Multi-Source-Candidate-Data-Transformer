@@ -1,0 +1,22 @@
+Priya Sharma
+Engineering Lead, Distributed Systems
+Email: priya.sharma@gmail.com | Phone: +1 (555) 123.4567 | github.com/priyasharma
+
+SUMMARY
+Backend-focused engineer who likes building reliable, high-throughput services.
+Currently leading a small platform team at Acme Corporation.
+
+SKILLS
+py, JS, Golang, k8s, Docker, PostgreSQL, Ninjutsu
+
+EXPERIENCE
+Acme Corporation - Engineering Lead
+Jan 2019 - Mar 2023
+  Built event-driven services and owned the on-call rotation for billing.
+
+Globex Inc - Backend Engineer
+2016 - 2018
+  Shipped the first version of the internal payments API.
+
+EDUCATION
+B.S. Computer Science, State University, 2016

@@ -1,0 +1,11 @@
+{
+  "fields": [
+    { "path": "name", "from": "full_name", "type": "string", "required": true, "normalize": false },
+    { "path": "contact.phone", "from": "phones[0]", "type": "string", "required": false, "normalize": "E164" },
+    { "path": "contact.email", "from": "emails[0]", "type": "string", "required": false, "normalize": false },
+    { "path": "country", "from": "location.country", "type": "string", "required": false, "normalize": "country" },
+    { "path": "skills", "from": "skills[].name", "type": "array", "required": false, "normalize": "canonical" }
+  ],
+  "include_confidence": true,
+  "on_missing": "null"
+}
