@@ -177,7 +177,7 @@ The pipeline is a straight line of deterministic stages:
 ingest → merge (normalize + entity resolution + confidence) → project → validate
 ```
 
-**Source-adapter pattern.** Each input source has an ingestion adapter that reads raw values and stamps provenance — it never normalizes, merges, or validates. Implemented: recruiter CSV (`csv_reader.py`) and plain-text resume (`resume_parser.py`, including LinkedIn/GitHub URL extraction from resume text). Scaffolded placeholders: `ats_json.py`, `github_api.py`, `recruiter_notes.py`. `base.py` documents the intended interface only.
+**Source-adapter pattern.** Each input source has an ingestion adapter that reads raw values and stamps provenance — it never normalizes, merges, or validates. Implemented: recruiter CSV (`csv_reader.py`) and plain-text resume (`resume_parser.py`, including LinkedIn/GitHub URL extraction from resume text). Additional adapters (ATS JSON, GitHub API, recruiter notes) are included as extension points but are outside the scope of this assignment.
 
 **Canonical record vs. projection.** Merge produces a rich `CanonicalCandidate` — every field, provenance trail, and confidence score. Projection is a separate, config-driven, read-only layer that selects, renames, and nests fields for output. Validation runs **after** projection against the schema implied by the config.
 
