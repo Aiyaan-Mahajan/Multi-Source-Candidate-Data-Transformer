@@ -370,7 +370,7 @@ Eightfold_Transformer/
 ├── README.md
 ├── configs/
 │   ├── default.json                 # default projection config (includes candidate_id)
-│   ├── default_config.json          # legacy fallback; same fields minus candidate_id
+│   ├── default_config.json          # legacy fallback; subset (no candidate_id, no headline)
 │   ├── example_custom_config.json   # nested/renamed output example
 │   └── skills.json                  # skill alias → canonical name vocabulary
 ├── data/
