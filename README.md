@@ -36,9 +36,17 @@ Every emitted value carries **provenance** (source, extraction method) and **con
 
 Requires **Python 3.9+** (developed and verified on 3.13). Dependencies are minimal; CSV, JSON, argparse, and hashing use the standard library.
 
+### Clone the repository
+
+```bash
+git clone https://github.com/Aiyaan-Mahajan/Multi-Source-Candidate-Data-Transformer.git
+
+**Navigate into the repo first.**
+
+cd Multi-Source-Candidate-Data-Transformer
+
 ### macOS
 
-Navigate into the repo first.
 
 ```bash
 # 1. Go to the project root (the folder containing main.py)
