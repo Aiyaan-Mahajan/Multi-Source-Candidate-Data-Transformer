@@ -115,7 +115,7 @@ python -m eightfold_transformer.app --csv data/candidates.csv --resume data/resu
 python main.py --csv data/candidates.csv --resume data/resume.txt --config configs/example_custom_config.json
 ```
 
-When `--config is omitted, the CLI uses configs/default.json, falling back to configs/default_config.json`.
+When `--config` is omitted, the CLI uses `configs/default.json`, falling back to `configs/default_config.json`.
 
 ### Save Output to Files
 ```bash
@@ -126,8 +126,8 @@ python main.py --csv data/candidates.csv --resume data/resume.txt --config confi
 
 Pre-generated sample outputs are committed in the repo:
 
-output/default_run.json — default projection config (full candidate fields)
-output/custom_config_run.json — nested contact fields + confidence wrappers
+- `output/default_run.json` — default projection config (full candidate fields)
+- `output/custom_config_run.json` — nested contact fields + confidence wrappers
 
 ### Optional flags
 
@@ -339,7 +339,7 @@ Verified Priya output from a live CLI run (`configs/default.json`):
 
 - `TrackedValue[T]` **as provenance carrier.** A single generic wrapper (`value` / `source` / `confidence` / `extraction_method`) travels with every extracted value. The top-level `provenance[]` ledger is a flattened view of those carriers.
 - **Determinism by construction.** No `datetime.now()`, no RNG, no network. Dates use a fixed anchor (`2000-01-01`) for missing components. Clusters, list fields, skills, and provenance are sorted; output ordered by `candidate_id` (stable SHA-256 over strongest match key).
-- **Conservative-but-capable merging.** Exact email and GitHub/LinkedIn keys union records immediately. Name blocking limits comparisons; composite entity resolution scores name, initials, email/phone/company/title overlap plus resume corroboration. High composite scores can merge records sharing no single strong key (e.g. P. Sharma merges with Priya Sharma when phone/company overlap and composite score exceeds threshold.).
+- **Conservative-but-capable merging.** Exact email and GitHub/LinkedIn keys union records immediately. Name blocking limits comparisons; composite entity resolution scores name, initials, email/phone/company/title overlap plus resume corroboration. High composite scores can merge records sharing no single strong key (e.g. P. Sharma merges with Priya Sharma when phone/company overlap and composite score exceeds threshold).
 - **Company normalization.** Legal suffixes and variants (`Corp`, `Corporation`, `Inc`, …) stripped so `Acme Corp` and `Acme Corporation` match for clustering and experience dedupe.
 - **Skill vocabulary gate.** `configs/skills.json` maps aliases to canonical names; unknown tokens dropped at merge.
 - **Confidence that punishes disagreement.** `field_confidence = clamp01(0.5·source_trust + 0.3·agreement_ratio + 0.2·method_reliability)`. Contested values score lower. `overall_confidence` is the mean of present core identity fields.
@@ -374,8 +374,11 @@ Verified Priya output from a live CLI run (`configs/default.json`):
 ## Project structure
 
 ```
-Eightfold_Transformer/
+Multi-Source-Candidate-Data-Transformer/   # or: project root
 ├── main.py                          # entry-point shim → app.cli.main
+├── output/
+│   ├── default_run.json
+│   └── custom_config_run.json
 ├── requirements.txt
 ├── README.md
 ├── configs/
