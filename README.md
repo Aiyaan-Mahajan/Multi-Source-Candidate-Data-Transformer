@@ -227,7 +227,7 @@ Minimal example (matches actual config format):
 }
 ```
 
-`default.json` **vs** `default_config.json`**:** both project the same canonical fields (`full_name`, `emails`, `phones`, `location_country`, `headline`, `skills`, `education`, `experience`, `links`). `default.json` additionally includes `candidate_id`; `default_config.json` omits it — a projection-dependent field that appears only when the config declares it.
+**`default.json` vs `default_config.json`:** `default.json` is the primary projection config and includes the full field set (`candidate_id`, `headline`, `full_name`, `emails`, `phones`, `location_country`, `skills`, `education`, `experience`, `links`). `default_config.json` is a legacy fallback with a subset of those fields (no `candidate_id`, no `headline`). The CLI uses `default.json` first and falls back to `default_config.json` only if the former is missing. Fields such as `candidate_id` appear in output only when declared in the active config.
 
 See `configs/example_custom_config.json` for nested contact fields, confidence wrappers, and flattened skill names. The projector supports field select/rename, nested paths, array indexing, per-field `normalize`, `on_missing` (`null`/`omit`/`error`), and confidence/provenance toggles.
 
