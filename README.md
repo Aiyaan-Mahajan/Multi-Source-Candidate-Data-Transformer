@@ -42,12 +42,6 @@ Requires **Python 3.9+** (developed and verified on 3.13). Dependencies are mini
 git clone https://github.com/Aiyaan-Mahajan/Multi-Source-Candidate-Data-Transformer.git
 ```
 
-### Navigate into the repo first.
-
-```bash
-
-
-```
 
 ### macOS
 
