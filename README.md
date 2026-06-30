@@ -186,7 +186,7 @@ ingest → merge (normalize + entity resolution + confidence) → project → va
 ### Data flow
 
 ```
-  CSV / resume .txt / [scaffolded sources]
+  CSV / resume .txt / [future adapters]
               │
               ▼
   INGESTION ──► PartialRecord[]  (adapters; raw capture + TrackedValue)
@@ -396,7 +396,7 @@ Eightfold_Transformer/
 
 ## Assumptions & out of scope
 
-- **Implemented sources:** recruiter CSV (`name,email,phone,current_company,title`) and plain-text resumes (LinkedIn/GitHub URL extraction from resume text).This implementation focuses on the required structured (CSV) and unstructured (plain-text resume) sources. Additional adapters such as ATS JSON, GitHub API, and recruiter notes are intentionally left as future extensions. PDF/DOCX dependencies are listed but ingestion is not wired.
+- **Implemented sources:** This implementation supports the required structured source (Recruiter CSV: name, email, phone, current_company, title) and unstructured source (plain-text resumes, including LinkedIn/GitHub URL extraction). Additional adapters such as ATS JSON, GitHub API, and recruiter notes are intentionally left as future extensions. PDF/DOCX resume ingestion is planned but not yet wired.
 - **Phone default region is** `IN` (configurable in the normalizer); numbers with explicit `+<country code>` are parsed as-is.
 - **Resume format** assumes recognizable section headers (`SUMMARY`, `SKILLS`, `EXPERIENCE`, `EDUCATION`). Arbitrary layouts are out of scope for the rule-based parser.
 - **Skills** must appear in `configs/skills.json` to survive merge; unknown tokens are dropped by design.
