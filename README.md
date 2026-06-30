@@ -309,15 +309,16 @@ Verified Priya output from a live CLI run (`configs/default.json`):
 
 
 
-## Implemented vs scaffolded
+## Implemented sources
 
-
-| Status          | Component                                                                                                                                               |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Implemented** | Recruiter CSV ingestion, plain-text resume parsing, merge/dedupe, entity resolution, confidence scoring, runtime projection, post-projection validation |
-| **Scaffolded**  | ATS JSON (`ats_json.py`), GitHub API (`github_api.py`), recruiter notes (`recruiter_notes.py`) — empty placeholder modules                              |
-| **Partial**     | LinkedIn URLs parsed from resume text only — not a separate adapter                                                                                     |
-| **Not wired**   | PDF/DOCX resume ingestion (`pdfplumber`, `python-docx` listed in `requirements.txt` but no adapter connected)                                           |
+| Category | Component |
+|----------|-----------|
+| **Structured (Implemented)** | Recruiter CSV ingestion |
+| **Unstructured (Implemented)** | Plain-text resume parsing |
+| **Core pipeline (Implemented)** | Merge & deduplication, entity resolution, confidence scoring, runtime projection, post-projection validation |
+| **Future extensions** | ATS JSON (`ats_json.py`), GitHub API (`github_api.py`), recruiter notes (`recruiter_notes.py`) |
+| **Not implemented** | PDF/DOCX resume ingestion (`pdfplumber`, `python-docx` dependencies included but no adapter connected) |
+| **Partial** | LinkedIn URLs extracted from resume text only (no dedicated adapter) |
 
 
 ---
