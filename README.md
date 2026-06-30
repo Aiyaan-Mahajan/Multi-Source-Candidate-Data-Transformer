@@ -45,7 +45,7 @@ git clone https://github.com/Aiyaan-Mahajan/Multi-Source-Candidate-Data-Transfor
 ### Navigate into the repo first.
 
 ```bash
-cd Multi-Source-Candidate-Data-Transformer
+
 
 ```
 
@@ -54,7 +54,7 @@ cd Multi-Source-Candidate-Data-Transformer
 
 ```bash
 # 1. Go to the project root (the folder containing main.py)
-cd /path/to/Eightfold_Transformer
+cd Multi-Source-Candidate-Data-Transformer
 
 # 2. Create a virtual environment (required — see PEP 668 note below)
 python3 -m venv venv
@@ -77,7 +77,7 @@ Key dependencies: `pydantic`, `phonenumbers`, `python-dateutil`, `pytest`. `pdfp
 
 ```powershell
 # 1. Go to the project root
-cd C:\path\to\Eightfold_Transformer
+cd Multi-Source-Candidate-Data-Transformer
 
 # 2. Create a virtual environment
 python -m venv venv
