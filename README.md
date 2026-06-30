@@ -95,13 +95,13 @@ On Windows, use `python` (not `python3`) if that is your Python launcher convent
 
 ## Running the project
 
-**Prerequisites:** project root directory, virtual environment activated.
+**Prerequisites:** project root directory (the folder containing `main.py`), virtual environment activated.
 
 ### Default run (sample data)
 
 ```bash
 python main.py --csv data/candidates.csv --resume data/resume.txt --config configs/default.json
-```
+
 
 Module equivalent: `python -m eightfold_transformer.app --csv data/candidates.csv --resume data/resume.txt --config configs/default.json`
 
@@ -111,7 +111,19 @@ Module equivalent: `python -m eightfold_transformer.app --csv data/candidates.cs
 python main.py --csv data/candidates.csv --resume data/resume.txt --config configs/example_custom_config.json
 ```
 
-When `--config` is omitted, the CLI uses `configs/default.json`, falling back to `configs/default_config.json`.
+When `--config is omitted, the CLI uses configs/default.json, falling back to configs/default_config.json`.
+
+### Save Output to Files
+```bash
+mkdir -p output
+python main.py --csv data/candidates.csv --resume data/resume.txt --config configs/default.json --out output/default_run.json
+python main.py --csv data/candidates.csv --resume data/resume.txt --config configs/example_custom_config.json --out output/custom_config_run.json
+```
+
+Pre-generated sample outputs are committed in the repo:
+
+output/default_run.json — default projection config (full candidate fields)
+output/custom_config_run.json — nested contact fields + confidence wrappers
 
 ### Optional flags
 
