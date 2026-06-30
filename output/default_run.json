@@ -1,0 +1,189 @@
+[
+  {
+    "candidate_id": "cand_086d12a7e164b775",
+    "full_name": "Priya Sharma",
+    "emails": [
+      "priya.s@work.io",
+      "priya.sharma@gmail.com"
+    ],
+    "phones": [],
+    "location_country": null,
+    "headline": "Engineering Lead, Distributed Systems",
+    "skills": [
+      {
+        "name": "Docker",
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Go",
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Kubernetes",
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "PostgreSQL",
+        "sources": [
+          "resume"
+        ]
+      },
+      {
+        "name": "Python",
+        "sources": [
+          "resume"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "institution": "State University",
+        "degree": "B.S.",
+        "field": "Computer Science",
+        "end_year": 2016
+      }
+    ],
+    "experience": [
+      {
+        "company": "Acme Corporation",
+        "title": "Senior Backend Engineer",
+        "start": "2019-01",
+        "end": null,
+        "summary": "Built event-driven services and owned the on-call rotation for billing."
+      },
+      {
+        "company": "Globex Inc",
+        "title": "Backend Engineer",
+        "start": "2016-01",
+        "end": "2018-01",
+        "summary": "Shipped the first version of the internal payments API."
+      }
+    ],
+    "links": {
+      "linkedin": null,
+      "github": "github.com/priyasharma",
+      "portfolio": null,
+      "other": []
+    }
+  },
+  {
+    "candidate_id": "cand_5a2ec64548f023b6",
+    "full_name": "Marcus Lee",
+    "emails": [
+      "m.lee2@example.com"
+    ],
+    "phones": [],
+    "location_country": null,
+    "headline": null,
+    "skills": [],
+    "education": [],
+    "experience": [
+      {
+        "company": "Initech",
+        "title": "Data Analyst",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    }
+  },
+  {
+    "candidate_id": "cand_65578d5eaf49bdc2",
+    "full_name": "Dana Patel",
+    "emails": [
+      "dana.patel@nullco.com"
+    ],
+    "phones": [],
+    "location_country": null,
+    "headline": null,
+    "skills": [],
+    "education": [],
+    "experience": [
+      {
+        "company": null,
+        "title": "QA Lead",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    }
+  },
+  {
+    "candidate_id": "cand_a2bb726e09a2c8bd",
+    "full_name": "Marcus Lee",
+    "emails": [
+      "marcus.lee@example.com"
+    ],
+    "phones": [],
+    "location_country": null,
+    "headline": null,
+    "skills": [],
+    "education": [],
+    "experience": [
+      {
+        "company": "Initech",
+        "title": "Data Scientist",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    }
+  },
+  {
+    "candidate_id": "cand_facb12b20c3a8bef",
+    "full_name": "Jordan Kim",
+    "emails": [
+      "jordan.kim@globex.com"
+    ],
+    "phones": [],
+    "location_country": null,
+    "headline": null,
+    "skills": [],
+    "education": [],
+    "experience": [
+      {
+        "company": "Globex Inc",
+        "title": "Product Manager",
+        "start": null,
+        "end": null,
+        "summary": null
+      }
+    ],
+    "links": {
+      "linkedin": null,
+      "github": null,
+      "portfolio": null,
+      "other": []
+    }
+  }
+]
