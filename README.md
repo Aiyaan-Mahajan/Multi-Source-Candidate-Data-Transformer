@@ -386,7 +386,7 @@ Eightfold_Transformer/
 │       ├── merger/                  # matcher.py, entity_resolution.py, resolver.py, …
 │       ├── projection/              # config.py, projector.py
 │       ├── validation/              # validator.py, schemas.py
-│       └── utils/                   # hashing.py, ordering.py, io.py
+│       └── utils/                   # scaffold (hashing/ordering/io stubs)
 └── tests/                           # pytest suite (191 tests)
 ```
 
